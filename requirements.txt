@@ -1,0 +1,26 @@
+# 核心科学计算
+numpy
+pandas
+scipy
+
+# 可视化
+matplotlib
+seaborn
+
+# 机器学习
+scikit-learn
+xgboost
+lightgbm
+catboost
+optuna
+scikit-optimize
+shap
+
+# 材料信息学
+pymatgen
+matminer
+mp-api
+
+# Notebook 环境
+jupyterlab
+ipython
