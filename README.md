@@ -104,8 +104,8 @@ flowchart TD
 ## 6. 环境与运行
 
 ```powershell
-# Python 3.9–3.11 均可（notebook 原始环境为 3.9.25）
-conda create -n h2ml python=3.10 -y
+# 原始运行环境为 Python 3.9.25；换用其他版本时请先确认依赖兼容性
+conda create -n h2ml python=3.9 -y
 conda activate h2ml
 pip install -r requirements.txt
 
@@ -115,7 +115,7 @@ $env:MP_API_KEY = "your-key-here"
 jupyter lab
 ```
 
-运行顺序：在同一目录下先跑 `01_forward_hydride_pipeline.ipynb`，再跑 `02_reverse_parent_alloy_pipeline.ipynb`。逆向流程的 cell 11 会生成中间文件 `Final_ML_Gold_Features.csv`，cell 13 读取它，因此请**从上到下顺序执行**，不要跳步。
+运行顺序：在同一目录下先跑 `01_forward_hydride_pipeline.ipynb`，再跑 `02_reverse_parent_alloy_pipeline.ipynb`。逆向流程会先生成中间文件 `Final_ML_Gold_Features.csv`，后面的建模单元再读取它，因此请**从上到下顺序执行**，不要跳步。
 
 ## 7. 已知限制
 
