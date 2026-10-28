@@ -1,0 +1,28 @@
+# Notebook 检查点
+.ipynb_checkpoints/
+
+# CatBoost 训练日志
+catboost_info/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# notebook 内部生成的中间文件
+Final_ML_Gold_Features.csv
+fused_advanced_features.csv
+
+# 缓存
+*.pkl
+.cache/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 环境变量与密钥
+.env
+.env.*
